@@ -1,0 +1,74 @@
+Scenario: baseline
+  Requests: 32
+  Retrieval latency mean (ms): 657.57
+  Agent 1 latency mean (ms): 6470.81
+  Agent 2 latency mean (ms): 0.00
+  Total latency mean (ms): 7128.40
+  Total latency median (ms): 5828.43
+  Total latency p95 (ms): 11821.72
+  RSS mean (MB): 2816.04
+  CUDA reserved mean (MB): 16534.00
+  CUDA peak reserved mean (MB): 16534.00
+  Answer words mean: 145.34
+  Page citations mean: 0.31
+  Worked example rate: 0.00
+  Key idea rate: 0.00
+  Typical error rate: 0.00
+  Check question rate: 0.00
+  MLP section rate: 0.00
+  Retrieved distinct sources mean: 2.16
+  Agent 1 evidence count mean: 0.00
+  Agent 1 distinct sources mean: 0.00
+  MLP length mean: 0.00
+  Agent 1 parse success rate: None
+  Agent 2 parse success rate: None
+
+Scenario: curated_pedagogical
+  Requests: 24
+  Retrieval latency mean (ms): 674.01
+  Agent 1 latency mean (ms): 16012.88
+  Agent 2 latency mean (ms): 11084.77
+  Total latency mean (ms): 27771.71
+  Total latency median (ms): 26768.81
+  Total latency p95 (ms): 35426.74
+  RSS mean (MB): 2827.31
+  CUDA reserved mean (MB): 24231.00
+  CUDA peak reserved mean (MB): 24231.00
+  Answer words mean: 214.75
+  Page citations mean: 4.42
+  Worked example rate: 0.96
+  Key idea rate: 0.96
+  Typical error rate: 0.96
+  Check question rate: 0.96
+  MLP section rate: 0.00
+  Retrieved distinct sources mean: 2.17
+  Agent 1 evidence count mean: 2.83
+  Agent 1 distinct sources mean: 2.25
+  MLP length mean: 0.00
+  Agent 1 parse success rate: 1
+  Agent 2 parse success rate: 0.875
+
+Scenario: curated_pedagogical_mlp
+  Requests: 24
+  Retrieval latency mean (ms): 691.12
+  Agent 1 latency mean (ms): 16636.62
+  Agent 2 latency mean (ms): 13545.43
+  Total latency mean (ms): 30873.23
+  Total latency median (ms): 30686.64
+  Total latency p95 (ms): 37705.91
+  RSS mean (MB): 2848.63
+  CUDA reserved mean (MB): 24194.00
+  CUDA peak reserved mean (MB): 24194.00
+  Answer words mean: 262.88
+  Page citations mean: 4.58
+  Worked example rate: 0.96
+  Key idea rate: 0.96
+  Typical error rate: 0.96
+  Check question rate: 0.96
+  MLP section rate: 0.96
+  Retrieved distinct sources mean: 2.17
+  Agent 1 evidence count mean: 2.88
+  Agent 1 distinct sources mean: 2.33
+  MLP length mean: 2.67
+  Agent 1 parse success rate: 1
+  Agent 2 parse success rate: 0.875
