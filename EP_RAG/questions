@@ -1,0 +1,13 @@
+ID,Inferred Topic,Approximate Query
+q01,Arrays vs. linked lists,Difference between arrays and linked lists
+q02,Singly vs. doubly linked lists,Difference between singly and doubly linked lists
+q03,Stack,What is a stack and what are its operations
+q04,Queue vs. stack,Difference between queue and stack
+q05,Linear vs. binary search,Comparison between linear search and binary search
+q06,O(1) Complexity / Big O,What constant complexity means or how to understand Big O with examples
+q07,Primary key,What is a primary key
+q08,Networking protocol,What is a networking protocol
+q09,Arrays vs. linked lists in operations,Comparison of access and insertion in arrays and linked lists
+q10,Real-world examples of stack and queue,Practical examples or analogies of stack and queue
+q11,Search complexity,Complexity difference between linear search and binary search
+q12,Recursion vs. iteration,Difference between recursion and iteration
