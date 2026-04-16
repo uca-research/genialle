@@ -1,0 +1,3 @@
+[submodule "MetaPersonVRChat"]
+	path = MetaPersonVRChat
+	url = https://github.com/andres-munoz/MetaPersonVRChat.git
