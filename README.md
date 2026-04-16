@@ -3,4 +3,4 @@ Más información [aquí](https://produccioncientifica.uca.es/proyectos/925727/d
 
 Esta proyecto está financiado por MICIU/AEI/10.13039/501100011033 y por FEDER, UE, en la convocatoria [Generación de Conocimiento. Plan Nacional I+D+i (MINISTERIO DE CIENCIA, INNOVACIÓN Y UNIVERSIDADES)](https://www.planapoyadocentes.gob.es/)
 
-![MICIU_logo](./MICIU_logo.jpg)
+![MICIU_logo](https://github.com/uca-research/genialle/main/MICIU_logo.jpg?raw=ture)
