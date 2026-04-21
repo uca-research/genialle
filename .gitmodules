@@ -1,3 +1,6 @@
 [submodule "MetaPersonVRChat"]
 	path = MetaPersonVRChat
 	url = https://github.com/andres-munoz/MetaPersonVRChat.git
+[submodule "LLMPrompter"]
+	path = LLMPrompter
+	url = https://github.com/lNoelia/KnowledgeModelling_LLMPrompter
