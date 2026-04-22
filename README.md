@@ -1,3 +1,5 @@
+![Genialle_logo](./genialle_logo.jpg)
+
 Repositorio abierto del proyecto GENIALLE (Agentes inteligentes generativos para entornos digitales de aprendizaje, I+D+i PID2023-149674OB-I00) de la Universidad de Cádiz.
 Más información [aquí](https://produccioncientifica.uca.es/proyectos/925727/detalle)
 
