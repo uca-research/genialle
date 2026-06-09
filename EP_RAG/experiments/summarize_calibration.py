@@ -3,7 +3,8 @@ from collections import defaultdict
 from pathlib import Path
 from statistics import mean, median
 
-RESULTS_DIR = Path("/home/albertomatilla/rag_agentico_edu_exp2_granite/experiments/results")
+BASE_DIR = Path(__file__).resolve().parents[1]
+RESULTS_DIR = BASE_DIR / "experiments" / "results_mlp"
 
 def load_records():
     files = sorted(RESULTS_DIR.glob("calibration_granite_*.jsonl"))
