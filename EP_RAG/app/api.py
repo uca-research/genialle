@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from dotenv import load_dotenv
-
+from pathlib import Path
 from app.core.schemas import AskRequest
 from app.core.retriever import search
 from app.agents.agent1 import run_agent1
@@ -18,7 +18,8 @@ from app.core.telemetry import (
     append_jsonl,
 )
 
-load_dotenv(dotenv_path="/home/albertomatilla/rag_agentico_edu/.env")
+BASE_DIR = Path(__file__).resolve().parents[1]
+load_dotenv(dotenv_path=BASE_DIR / ".env")
 
 app = FastAPI(title="RAG agéntico educativo")
 
