@@ -1,0 +1,26 @@
+[
+  {
+    "id": "baseline",
+    "name": "baseline_classic_rag",
+    "description": "Classic RAG baseline: retrieve top-k chunks and answer directly with one model.",
+    "top_k": 5,
+    "warmup_requests": 2,
+    "repetitions": 2
+  },
+  {
+    "id": "curated_pedagogical",
+    "name": "curated_pedagogical_granite",
+    "description": "Retrieve top-k chunks, curate evidence with Agent 1, then synthesize a pedagogical response with Granite.",
+    "top_k": 5,
+    "warmup_requests": 2,
+    "repetitions": 2
+  },
+  {
+    "id": "curated_pedagogical_mlp",
+    "name": "curated_pedagogical_granite_with_minimum_learning_path",
+    "description": "Retrieve top-k chunks, curate evidence with Agent 1, construct a minimum learning path, then synthesize a pedagogical response with Granite.",
+    "top_k": 5,
+    "warmup_requests": 2,
+    "repetitions": 2
+  }
+]

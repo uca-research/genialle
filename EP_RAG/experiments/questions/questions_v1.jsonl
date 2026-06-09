@@ -1,0 +1,26 @@
+{"id":"q01","domain":"data_structures","type":"definition","question":"What is a linked list and how does it differ from an array?"}
+{"id":"q02","domain":"data_structures","type":"definition","question":"What is the difference between a singly linked list and a doubly linked list?"}
+{"id":"q03","domain":"data_structures","type":"definition","question":"What is a stack and what kind of operations does it support?"}
+{"id":"q04","domain":"data_structures","type":"definition","question":"What is a queue and how is it different from a stack?"}
+{"id":"q05","domain":"algorithms","type":"definition","question":"What is binary search and when can it be used?"}
+{"id":"q06","domain":"algorithms","type":"definition","question":"What is algorithmic complexity and what does constant time mean?"}
+{"id":"q07","domain":"databases","type":"definition","question":"What is a primary key in a database?"}
+{"id":"q08","domain":"networking","type":"definition","question":"What is a protocol in computer networking?"}
+
+{"id":"q09","domain":"data_structures","type":"comparison","question":"Compare arrays and linked lists in terms of access and insertion."}
+{"id":"q10","domain":"data_structures","type":"comparison","question":"Compare stacks and queues with a simple example."}
+{"id":"q11","domain":"algorithms","type":"comparison","question":"Compare linear search and binary search for a beginner."}
+{"id":"q12","domain":"algorithms","type":"comparison","question":"Compare recursion and iteration in a simple way."}
+{"id":"q13","domain":"databases","type":"comparison","question":"Compare a primary key and a foreign key."}
+{"id":"q14","domain":"networking","type":"comparison","question":"Compare TCP and UDP at an introductory level."}
+{"id":"q15","domain":"software_engineering","type":"comparison","question":"Compare debugging and testing in software development."}
+{"id":"q16","domain":"programming_fundamentals","type":"comparison","question":"Compare a variable and a constant with a simple example."}
+
+{"id":"q17","domain":"data_structures","type":"application","question":"Which structure would be more appropriate if I need fast random access to elements: an array or a linked list?"}
+{"id":"q18","domain":"data_structures","type":"application","question":"If I often insert elements in the middle of a sequence, when might a linked list be preferable?"}
+{"id":"q19","domain":"algorithms","type":"application","question":"When is binary search not appropriate even if it is fast?"}
+{"id":"q20","domain":"algorithms","type":"application","question":"Why is constant-time access useful in practice?"}
+{"id":"q21","domain":"databases","type":"application","question":"Why is a primary key important when designing a table?"}
+{"id":"q22","domain":"networking","type":"application","question":"Why do protocols matter when two computers communicate?"}
+{"id":"q23","domain":"software_engineering","type":"application","question":"Why is evidence-based software engineering useful for software practice?"}
+{"id":"q24","domain":"programming_fundamentals","type":"application","question":"Give a beginner-friendly example of when a queue is useful in computing."}

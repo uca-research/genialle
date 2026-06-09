@@ -1,0 +1,34 @@
+[
+  {
+    "id": "scenario_a",
+    "name": "classic_single_agent_rag",
+    "description": "Classic RAG baseline: retrieve top-k chunks and answer directly with one LLM.",
+    "top_k": 5,
+    "warmup_requests": 2,
+    "repetitions": 3
+  },
+  {
+    "id": "scenario_b",
+    "name": "curated_rag",
+    "description": "Retrieve top-k chunks, build structured epistemic evidence with Agent 1, then render deterministically without a pedagogical planning agent.",
+    "top_k": 5,
+    "warmup_requests": 2,
+    "repetitions": 3
+  },
+  {
+    "id": "scenario_c",
+    "name": "granite_planner_with_rendering",
+    "description": "Retrieve top-k chunks, build structured epistemic evidence with Agent 1, let Granite select the pedagogical plan, then render deterministically.",
+    "top_k": 5,
+    "warmup_requests": 2,
+    "repetitions": 3
+  },
+  {
+    "id": "scenario_d",
+    "name": "granite_direct_writer_without_rendering",
+    "description": "Retrieve top-k chunks, build structured epistemic evidence with Agent 1, then let Granite produce the final pedagogical response directly without deterministic rendering.",
+    "top_k": 5,
+    "warmup_requests": 2,
+    "repetitions": 3
+  }
+]
