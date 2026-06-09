@@ -22,7 +22,7 @@ from app.core.telemetry import (
 )
 from app.core.pedagogical_renderer import render_pedagogical_answer
 
-BASE_DIR = Path("/home/albertomatilla/rag_agentico_edu_exp2_granite")
+BASE_DIR = Path(__file__).resolve().parents[1]
 QUESTIONS_PATH = BASE_DIR / "experiments" / "questions" / "questions_v1.jsonl"
 RESULTS_DIR = BASE_DIR / "experiments" / "results"
 
