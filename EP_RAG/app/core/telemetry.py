@@ -7,7 +7,11 @@ from datetime import datetime, timezone
 import psutil
 import torch
 
-LOG_DIR = "/home/albertomatilla/rag_agentico_edu/logs"
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+LOG_DIR = str(BASE_DIR / "logs")
+LOG_FILE = os.path.join(LOG_DIR, "queries.jsonl")
 LOG_FILE = os.path.join(LOG_DIR, "queries.jsonl")
 
 def ensure_log_dir():
