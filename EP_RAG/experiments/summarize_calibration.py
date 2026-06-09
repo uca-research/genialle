@@ -4,7 +4,6 @@ from pathlib import Path
 from statistics import mean, median
 
 BASE_DIR = Path(__file__).resolve().parents[1]
-RESULTS_DIR = BASE_DIR / "experiments" / "results_mlp"
 
 def load_records():
     files = sorted(RESULTS_DIR.glob("calibration_granite_*.jsonl"))
