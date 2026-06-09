@@ -7,6 +7,9 @@ from app.core.text_utils import clean_text, chunk_text
 from app.core.retriever import ensure_collection, upsert_points
 
 from pathlib import Path
+BASE_DIR = Path(__file__).resolve().parents[1]
+RAW_DIR = str(BASE_DIR / "data" / "raw")
+
 BATCH_SIZE = 16
 UPSERT_EVERY = 128
 
