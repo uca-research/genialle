@@ -6,7 +6,7 @@ from app.core.embeddings import embed_texts, get_embedding_model, get_device
 from app.core.text_utils import clean_text, chunk_text
 from app.core.retriever import ensure_collection, upsert_points
 
-RAW_DIR = "/home/albertomatilla/rag_agentico_edu/data/raw"
+from pathlib import Path
 BATCH_SIZE = 16
 UPSERT_EVERY = 128
 
