@@ -45,6 +45,3 @@ The accepted final execution completed:
 
 The repository supports claims about computational efficiency,
 robustness, memory governance and data minimisation.
-
-It does not establish comparative pedagogical effectiveness or
-student learning gains.
