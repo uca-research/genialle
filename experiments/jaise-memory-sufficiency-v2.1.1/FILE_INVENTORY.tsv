@@ -54,3 +54,6 @@
 171942	./data/final_run/episodes.jsonl.gz
 982426	./data/power_traces.tar.gz
 2826530	./data/final_run/steps.jsonl.gz
+2385	./analysis/README.md
+6045	./analysis/continuity_check_v2.py
+4729	./analysis/mediation_analysis_v2.py
