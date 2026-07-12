@@ -2,7 +2,6 @@
 0	./src/app_v2/metrics/__init__.py
 0	./src/app_v2/orchestrator/__init__.py
 56	./src/app_v2/__init__.py
-96	./.gitignore
 178	./scripts/scripts_v2/run_full_v2.sh
 179	./scripts/scripts_v2/run_pilot_v2.sh
 179	./scripts/scripts_v2/run_smoke_v2.sh
