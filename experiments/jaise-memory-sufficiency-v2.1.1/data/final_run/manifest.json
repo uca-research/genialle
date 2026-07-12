@@ -1,0 +1,3297 @@
+{
+  "created_utc": "2026-07-11T19:23:50.986576+00:00",
+  "mode": "full",
+  "repetitions": 15,
+  "settings": {
+    "model": {
+      "backend_url": "http://127.0.0.1:8033/v1",
+      "name": "gpt-oss-20b",
+      "request_timeout_sec": 180,
+      "max_retries": 2,
+      "retry_backoff_sec": 1.0,
+      "reasoning_format": "auto",
+      "cache_prompt": false,
+      "agent_generation": {
+        "Teacher": {
+          "temperature": 0.2,
+          "max_tokens": 1536,
+          "reasoning_effort": "low"
+        },
+        "Adapter": {
+          "temperature": 0.2,
+          "max_tokens": 1280,
+          "reasoning_effort": "low"
+        },
+        "Evaluator": {
+          "temperature": 0.0,
+          "max_tokens": 640,
+          "reasoning_effort": "low"
+        }
+      }
+    },
+    "experiment": {
+      "version": "2.1.1",
+      "master_seed": 26092026,
+      "smoke_repetitions": 1,
+      "pilot_repetitions": 2,
+      "full_repetitions": 15,
+      "conditions": [
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C4"
+      ],
+      "rounds_per_episode": 3,
+      "randomized_complete_blocks": true,
+      "warmup_calls": 3,
+      "cooldown_sec": 2.0,
+      "continue_after_failure": true
+    },
+    "energy": {
+      "gpu_index": 0,
+      "sample_interval_sec": 0.2,
+      "baseline_duration_sec": 3.0,
+      "store_raw_samples": true
+    },
+    "memory": {
+      "c1_max_chars": 1800,
+      "c2_max_chars": 3200,
+      "c3_top_k": 3,
+      "c3_max_chars": 2200,
+      "c4_max_chars": 1600
+    },
+    "logging": {
+      "root_dir": "logs_v2",
+      "store_final_outputs": true,
+      "store_reasoning_text": false
+    }
+  },
+  "task_ids": [
+    "overfitting_adaptation",
+    "gradient_descent_scaffolding",
+    "llm_agents_study_plan",
+    "database_normalization_misconception",
+    "software_architecture_tradeoffs",
+    "cybersecurity_threat_model"
+  ],
+  "schedule": [
+    {
+      "condition": "C3",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 1,
+      "run_key": "r01-overfitting_adaptation-C3"
+    },
+    {
+      "condition": "C0",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 1,
+      "run_key": "r01-software_architecture_tradeoffs-C0"
+    },
+    {
+      "condition": "C2",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 1,
+      "run_key": "r01-cybersecurity_threat_model-C2"
+    },
+    {
+      "condition": "C0",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 1,
+      "run_key": "r01-gradient_descent_scaffolding-C0"
+    },
+    {
+      "condition": "C4",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 1,
+      "run_key": "r01-llm_agents_study_plan-C4"
+    },
+    {
+      "condition": "C1",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 1,
+      "run_key": "r01-software_architecture_tradeoffs-C1"
+    },
+    {
+      "condition": "C3",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 1,
+      "run_key": "r01-software_architecture_tradeoffs-C3"
+    },
+    {
+      "condition": "C1",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 1,
+      "run_key": "r01-llm_agents_study_plan-C1"
+    },
+    {
+      "condition": "C2",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 1,
+      "run_key": "r01-database_normalization_misconception-C2"
+    },
+    {
+      "condition": "C3",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 1,
+      "run_key": "r01-llm_agents_study_plan-C3"
+    },
+    {
+      "condition": "C0",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 1,
+      "run_key": "r01-overfitting_adaptation-C0"
+    },
+    {
+      "condition": "C1",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 1,
+      "run_key": "r01-cybersecurity_threat_model-C1"
+    },
+    {
+      "condition": "C2",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 1,
+      "run_key": "r01-software_architecture_tradeoffs-C2"
+    },
+    {
+      "condition": "C2",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 1,
+      "run_key": "r01-gradient_descent_scaffolding-C2"
+    },
+    {
+      "condition": "C1",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 1,
+      "run_key": "r01-gradient_descent_scaffolding-C1"
+    },
+    {
+      "condition": "C4",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 1,
+      "run_key": "r01-database_normalization_misconception-C4"
+    },
+    {
+      "condition": "C4",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 1,
+      "run_key": "r01-software_architecture_tradeoffs-C4"
+    },
+    {
+      "condition": "C0",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 1,
+      "run_key": "r01-cybersecurity_threat_model-C0"
+    },
+    {
+      "condition": "C4",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 1,
+      "run_key": "r01-cybersecurity_threat_model-C4"
+    },
+    {
+      "condition": "C0",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 1,
+      "run_key": "r01-llm_agents_study_plan-C0"
+    },
+    {
+      "condition": "C3",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 1,
+      "run_key": "r01-database_normalization_misconception-C3"
+    },
+    {
+      "condition": "C3",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 1,
+      "run_key": "r01-gradient_descent_scaffolding-C3"
+    },
+    {
+      "condition": "C0",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 1,
+      "run_key": "r01-database_normalization_misconception-C0"
+    },
+    {
+      "condition": "C4",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 1,
+      "run_key": "r01-gradient_descent_scaffolding-C4"
+    },
+    {
+      "condition": "C2",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 1,
+      "run_key": "r01-llm_agents_study_plan-C2"
+    },
+    {
+      "condition": "C3",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 1,
+      "run_key": "r01-cybersecurity_threat_model-C3"
+    },
+    {
+      "condition": "C1",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 1,
+      "run_key": "r01-overfitting_adaptation-C1"
+    },
+    {
+      "condition": "C4",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 1,
+      "run_key": "r01-overfitting_adaptation-C4"
+    },
+    {
+      "condition": "C1",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 1,
+      "run_key": "r01-database_normalization_misconception-C1"
+    },
+    {
+      "condition": "C2",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 1,
+      "run_key": "r01-overfitting_adaptation-C2"
+    },
+    {
+      "condition": "C3",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 2,
+      "run_key": "r02-cybersecurity_threat_model-C3"
+    },
+    {
+      "condition": "C4",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 2,
+      "run_key": "r02-cybersecurity_threat_model-C4"
+    },
+    {
+      "condition": "C2",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 2,
+      "run_key": "r02-overfitting_adaptation-C2"
+    },
+    {
+      "condition": "C4",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 2,
+      "run_key": "r02-llm_agents_study_plan-C4"
+    },
+    {
+      "condition": "C4",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 2,
+      "run_key": "r02-database_normalization_misconception-C4"
+    },
+    {
+      "condition": "C2",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 2,
+      "run_key": "r02-software_architecture_tradeoffs-C2"
+    },
+    {
+      "condition": "C3",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 2,
+      "run_key": "r02-software_architecture_tradeoffs-C3"
+    },
+    {
+      "condition": "C4",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 2,
+      "run_key": "r02-gradient_descent_scaffolding-C4"
+    },
+    {
+      "condition": "C3",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 2,
+      "run_key": "r02-database_normalization_misconception-C3"
+    },
+    {
+      "condition": "C0",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 2,
+      "run_key": "r02-cybersecurity_threat_model-C0"
+    },
+    {
+      "condition": "C3",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 2,
+      "run_key": "r02-gradient_descent_scaffolding-C3"
+    },
+    {
+      "condition": "C1",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 2,
+      "run_key": "r02-database_normalization_misconception-C1"
+    },
+    {
+      "condition": "C1",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 2,
+      "run_key": "r02-software_architecture_tradeoffs-C1"
+    },
+    {
+      "condition": "C0",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 2,
+      "run_key": "r02-database_normalization_misconception-C0"
+    },
+    {
+      "condition": "C2",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 2,
+      "run_key": "r02-gradient_descent_scaffolding-C2"
+    },
+    {
+      "condition": "C3",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 2,
+      "run_key": "r02-overfitting_adaptation-C3"
+    },
+    {
+      "condition": "C0",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 2,
+      "run_key": "r02-software_architecture_tradeoffs-C0"
+    },
+    {
+      "condition": "C2",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 2,
+      "run_key": "r02-database_normalization_misconception-C2"
+    },
+    {
+      "condition": "C4",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 2,
+      "run_key": "r02-software_architecture_tradeoffs-C4"
+    },
+    {
+      "condition": "C4",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 2,
+      "run_key": "r02-overfitting_adaptation-C4"
+    },
+    {
+      "condition": "C1",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 2,
+      "run_key": "r02-cybersecurity_threat_model-C1"
+    },
+    {
+      "condition": "C0",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 2,
+      "run_key": "r02-gradient_descent_scaffolding-C0"
+    },
+    {
+      "condition": "C0",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 2,
+      "run_key": "r02-overfitting_adaptation-C0"
+    },
+    {
+      "condition": "C2",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 2,
+      "run_key": "r02-cybersecurity_threat_model-C2"
+    },
+    {
+      "condition": "C0",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 2,
+      "run_key": "r02-llm_agents_study_plan-C0"
+    },
+    {
+      "condition": "C3",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 2,
+      "run_key": "r02-llm_agents_study_plan-C3"
+    },
+    {
+      "condition": "C1",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 2,
+      "run_key": "r02-overfitting_adaptation-C1"
+    },
+    {
+      "condition": "C1",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 2,
+      "run_key": "r02-gradient_descent_scaffolding-C1"
+    },
+    {
+      "condition": "C2",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 2,
+      "run_key": "r02-llm_agents_study_plan-C2"
+    },
+    {
+      "condition": "C1",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 2,
+      "run_key": "r02-llm_agents_study_plan-C1"
+    },
+    {
+      "condition": "C2",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 3,
+      "run_key": "r03-software_architecture_tradeoffs-C2"
+    },
+    {
+      "condition": "C1",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 3,
+      "run_key": "r03-database_normalization_misconception-C1"
+    },
+    {
+      "condition": "C0",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 3,
+      "run_key": "r03-software_architecture_tradeoffs-C0"
+    },
+    {
+      "condition": "C4",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 3,
+      "run_key": "r03-database_normalization_misconception-C4"
+    },
+    {
+      "condition": "C1",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 3,
+      "run_key": "r03-gradient_descent_scaffolding-C1"
+    },
+    {
+      "condition": "C2",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 3,
+      "run_key": "r03-cybersecurity_threat_model-C2"
+    },
+    {
+      "condition": "C0",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 3,
+      "run_key": "r03-gradient_descent_scaffolding-C0"
+    },
+    {
+      "condition": "C2",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 3,
+      "run_key": "r03-llm_agents_study_plan-C2"
+    },
+    {
+      "condition": "C0",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 3,
+      "run_key": "r03-database_normalization_misconception-C0"
+    },
+    {
+      "condition": "C0",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 3,
+      "run_key": "r03-llm_agents_study_plan-C0"
+    },
+    {
+      "condition": "C2",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 3,
+      "run_key": "r03-gradient_descent_scaffolding-C2"
+    },
+    {
+      "condition": "C1",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 3,
+      "run_key": "r03-overfitting_adaptation-C1"
+    },
+    {
+      "condition": "C3",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 3,
+      "run_key": "r03-database_normalization_misconception-C3"
+    },
+    {
+      "condition": "C4",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 3,
+      "run_key": "r03-gradient_descent_scaffolding-C4"
+    },
+    {
+      "condition": "C4",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 3,
+      "run_key": "r03-overfitting_adaptation-C4"
+    },
+    {
+      "condition": "C2",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 3,
+      "run_key": "r03-database_normalization_misconception-C2"
+    },
+    {
+      "condition": "C0",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 3,
+      "run_key": "r03-cybersecurity_threat_model-C0"
+    },
+    {
+      "condition": "C3",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 3,
+      "run_key": "r03-gradient_descent_scaffolding-C3"
+    },
+    {
+      "condition": "C1",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 3,
+      "run_key": "r03-cybersecurity_threat_model-C1"
+    },
+    {
+      "condition": "C1",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 3,
+      "run_key": "r03-llm_agents_study_plan-C1"
+    },
+    {
+      "condition": "C4",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 3,
+      "run_key": "r03-cybersecurity_threat_model-C4"
+    },
+    {
+      "condition": "C4",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 3,
+      "run_key": "r03-llm_agents_study_plan-C4"
+    },
+    {
+      "condition": "C2",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 3,
+      "run_key": "r03-overfitting_adaptation-C2"
+    },
+    {
+      "condition": "C1",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 3,
+      "run_key": "r03-software_architecture_tradeoffs-C1"
+    },
+    {
+      "condition": "C3",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 3,
+      "run_key": "r03-software_architecture_tradeoffs-C3"
+    },
+    {
+      "condition": "C3",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 3,
+      "run_key": "r03-overfitting_adaptation-C3"
+    },
+    {
+      "condition": "C0",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 3,
+      "run_key": "r03-overfitting_adaptation-C0"
+    },
+    {
+      "condition": "C3",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 3,
+      "run_key": "r03-llm_agents_study_plan-C3"
+    },
+    {
+      "condition": "C3",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 3,
+      "run_key": "r03-cybersecurity_threat_model-C3"
+    },
+    {
+      "condition": "C4",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 3,
+      "run_key": "r03-software_architecture_tradeoffs-C4"
+    },
+    {
+      "condition": "C3",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 4,
+      "run_key": "r04-gradient_descent_scaffolding-C3"
+    },
+    {
+      "condition": "C4",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 4,
+      "run_key": "r04-llm_agents_study_plan-C4"
+    },
+    {
+      "condition": "C1",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 4,
+      "run_key": "r04-gradient_descent_scaffolding-C1"
+    },
+    {
+      "condition": "C4",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 4,
+      "run_key": "r04-gradient_descent_scaffolding-C4"
+    },
+    {
+      "condition": "C2",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 4,
+      "run_key": "r04-gradient_descent_scaffolding-C2"
+    },
+    {
+      "condition": "C3",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 4,
+      "run_key": "r04-database_normalization_misconception-C3"
+    },
+    {
+      "condition": "C3",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 4,
+      "run_key": "r04-overfitting_adaptation-C3"
+    },
+    {
+      "condition": "C3",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 4,
+      "run_key": "r04-llm_agents_study_plan-C3"
+    },
+    {
+      "condition": "C2",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 4,
+      "run_key": "r04-software_architecture_tradeoffs-C2"
+    },
+    {
+      "condition": "C1",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 4,
+      "run_key": "r04-cybersecurity_threat_model-C1"
+    },
+    {
+      "condition": "C0",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 4,
+      "run_key": "r04-database_normalization_misconception-C0"
+    },
+    {
+      "condition": "C4",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 4,
+      "run_key": "r04-database_normalization_misconception-C4"
+    },
+    {
+      "condition": "C3",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 4,
+      "run_key": "r04-cybersecurity_threat_model-C3"
+    },
+    {
+      "condition": "C2",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 4,
+      "run_key": "r04-cybersecurity_threat_model-C2"
+    },
+    {
+      "condition": "C4",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 4,
+      "run_key": "r04-software_architecture_tradeoffs-C4"
+    },
+    {
+      "condition": "C4",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 4,
+      "run_key": "r04-cybersecurity_threat_model-C4"
+    },
+    {
+      "condition": "C1",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 4,
+      "run_key": "r04-software_architecture_tradeoffs-C1"
+    },
+    {
+      "condition": "C0",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 4,
+      "run_key": "r04-llm_agents_study_plan-C0"
+    },
+    {
+      "condition": "C2",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 4,
+      "run_key": "r04-database_normalization_misconception-C2"
+    },
+    {
+      "condition": "C0",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 4,
+      "run_key": "r04-gradient_descent_scaffolding-C0"
+    },
+    {
+      "condition": "C0",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 4,
+      "run_key": "r04-overfitting_adaptation-C0"
+    },
+    {
+      "condition": "C3",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 4,
+      "run_key": "r04-software_architecture_tradeoffs-C3"
+    },
+    {
+      "condition": "C4",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 4,
+      "run_key": "r04-overfitting_adaptation-C4"
+    },
+    {
+      "condition": "C1",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 4,
+      "run_key": "r04-database_normalization_misconception-C1"
+    },
+    {
+      "condition": "C1",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 4,
+      "run_key": "r04-llm_agents_study_plan-C1"
+    },
+    {
+      "condition": "C0",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 4,
+      "run_key": "r04-software_architecture_tradeoffs-C0"
+    },
+    {
+      "condition": "C0",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 4,
+      "run_key": "r04-cybersecurity_threat_model-C0"
+    },
+    {
+      "condition": "C2",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 4,
+      "run_key": "r04-llm_agents_study_plan-C2"
+    },
+    {
+      "condition": "C1",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 4,
+      "run_key": "r04-overfitting_adaptation-C1"
+    },
+    {
+      "condition": "C2",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 4,
+      "run_key": "r04-overfitting_adaptation-C2"
+    },
+    {
+      "condition": "C0",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 5,
+      "run_key": "r05-gradient_descent_scaffolding-C0"
+    },
+    {
+      "condition": "C3",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 5,
+      "run_key": "r05-software_architecture_tradeoffs-C3"
+    },
+    {
+      "condition": "C3",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 5,
+      "run_key": "r05-cybersecurity_threat_model-C3"
+    },
+    {
+      "condition": "C1",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 5,
+      "run_key": "r05-gradient_descent_scaffolding-C1"
+    },
+    {
+      "condition": "C1",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 5,
+      "run_key": "r05-llm_agents_study_plan-C1"
+    },
+    {
+      "condition": "C4",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 5,
+      "run_key": "r05-overfitting_adaptation-C4"
+    },
+    {
+      "condition": "C2",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 5,
+      "run_key": "r05-overfitting_adaptation-C2"
+    },
+    {
+      "condition": "C2",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 5,
+      "run_key": "r05-gradient_descent_scaffolding-C2"
+    },
+    {
+      "condition": "C0",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 5,
+      "run_key": "r05-cybersecurity_threat_model-C0"
+    },
+    {
+      "condition": "C3",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 5,
+      "run_key": "r05-gradient_descent_scaffolding-C3"
+    },
+    {
+      "condition": "C2",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 5,
+      "run_key": "r05-llm_agents_study_plan-C2"
+    },
+    {
+      "condition": "C0",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 5,
+      "run_key": "r05-overfitting_adaptation-C0"
+    },
+    {
+      "condition": "C1",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 5,
+      "run_key": "r05-database_normalization_misconception-C1"
+    },
+    {
+      "condition": "C1",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 5,
+      "run_key": "r05-overfitting_adaptation-C1"
+    },
+    {
+      "condition": "C4",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 5,
+      "run_key": "r05-llm_agents_study_plan-C4"
+    },
+    {
+      "condition": "C1",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 5,
+      "run_key": "r05-software_architecture_tradeoffs-C1"
+    },
+    {
+      "condition": "C0",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 5,
+      "run_key": "r05-database_normalization_misconception-C0"
+    },
+    {
+      "condition": "C2",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 5,
+      "run_key": "r05-cybersecurity_threat_model-C2"
+    },
+    {
+      "condition": "C4",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 5,
+      "run_key": "r05-cybersecurity_threat_model-C4"
+    },
+    {
+      "condition": "C3",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 5,
+      "run_key": "r05-database_normalization_misconception-C3"
+    },
+    {
+      "condition": "C4",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 5,
+      "run_key": "r05-database_normalization_misconception-C4"
+    },
+    {
+      "condition": "C4",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 5,
+      "run_key": "r05-gradient_descent_scaffolding-C4"
+    },
+    {
+      "condition": "C0",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 5,
+      "run_key": "r05-llm_agents_study_plan-C0"
+    },
+    {
+      "condition": "C3",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 5,
+      "run_key": "r05-llm_agents_study_plan-C3"
+    },
+    {
+      "condition": "C3",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 5,
+      "run_key": "r05-overfitting_adaptation-C3"
+    },
+    {
+      "condition": "C1",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 5,
+      "run_key": "r05-cybersecurity_threat_model-C1"
+    },
+    {
+      "condition": "C2",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 5,
+      "run_key": "r05-database_normalization_misconception-C2"
+    },
+    {
+      "condition": "C2",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 5,
+      "run_key": "r05-software_architecture_tradeoffs-C2"
+    },
+    {
+      "condition": "C4",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 5,
+      "run_key": "r05-software_architecture_tradeoffs-C4"
+    },
+    {
+      "condition": "C0",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 5,
+      "run_key": "r05-software_architecture_tradeoffs-C0"
+    },
+    {
+      "condition": "C3",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 6,
+      "run_key": "r06-software_architecture_tradeoffs-C3"
+    },
+    {
+      "condition": "C0",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 6,
+      "run_key": "r06-software_architecture_tradeoffs-C0"
+    },
+    {
+      "condition": "C1",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 6,
+      "run_key": "r06-cybersecurity_threat_model-C1"
+    },
+    {
+      "condition": "C2",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 6,
+      "run_key": "r06-llm_agents_study_plan-C2"
+    },
+    {
+      "condition": "C4",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 6,
+      "run_key": "r06-llm_agents_study_plan-C4"
+    },
+    {
+      "condition": "C3",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 6,
+      "run_key": "r06-database_normalization_misconception-C3"
+    },
+    {
+      "condition": "C2",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 6,
+      "run_key": "r06-overfitting_adaptation-C2"
+    },
+    {
+      "condition": "C1",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 6,
+      "run_key": "r06-software_architecture_tradeoffs-C1"
+    },
+    {
+      "condition": "C3",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 6,
+      "run_key": "r06-gradient_descent_scaffolding-C3"
+    },
+    {
+      "condition": "C0",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 6,
+      "run_key": "r06-cybersecurity_threat_model-C0"
+    },
+    {
+      "condition": "C1",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 6,
+      "run_key": "r06-llm_agents_study_plan-C1"
+    },
+    {
+      "condition": "C2",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 6,
+      "run_key": "r06-cybersecurity_threat_model-C2"
+    },
+    {
+      "condition": "C3",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 6,
+      "run_key": "r06-cybersecurity_threat_model-C3"
+    },
+    {
+      "condition": "C0",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 6,
+      "run_key": "r06-overfitting_adaptation-C0"
+    },
+    {
+      "condition": "C3",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 6,
+      "run_key": "r06-llm_agents_study_plan-C3"
+    },
+    {
+      "condition": "C2",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 6,
+      "run_key": "r06-database_normalization_misconception-C2"
+    },
+    {
+      "condition": "C1",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 6,
+      "run_key": "r06-overfitting_adaptation-C1"
+    },
+    {
+      "condition": "C4",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 6,
+      "run_key": "r06-cybersecurity_threat_model-C4"
+    },
+    {
+      "condition": "C2",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 6,
+      "run_key": "r06-software_architecture_tradeoffs-C2"
+    },
+    {
+      "condition": "C0",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 6,
+      "run_key": "r06-gradient_descent_scaffolding-C0"
+    },
+    {
+      "condition": "C4",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 6,
+      "run_key": "r06-database_normalization_misconception-C4"
+    },
+    {
+      "condition": "C4",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 6,
+      "run_key": "r06-overfitting_adaptation-C4"
+    },
+    {
+      "condition": "C1",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 6,
+      "run_key": "r06-gradient_descent_scaffolding-C1"
+    },
+    {
+      "condition": "C4",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 6,
+      "run_key": "r06-software_architecture_tradeoffs-C4"
+    },
+    {
+      "condition": "C1",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 6,
+      "run_key": "r06-database_normalization_misconception-C1"
+    },
+    {
+      "condition": "C0",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 6,
+      "run_key": "r06-llm_agents_study_plan-C0"
+    },
+    {
+      "condition": "C4",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 6,
+      "run_key": "r06-gradient_descent_scaffolding-C4"
+    },
+    {
+      "condition": "C2",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 6,
+      "run_key": "r06-gradient_descent_scaffolding-C2"
+    },
+    {
+      "condition": "C3",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 6,
+      "run_key": "r06-overfitting_adaptation-C3"
+    },
+    {
+      "condition": "C0",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 6,
+      "run_key": "r06-database_normalization_misconception-C0"
+    },
+    {
+      "condition": "C0",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 7,
+      "run_key": "r07-software_architecture_tradeoffs-C0"
+    },
+    {
+      "condition": "C4",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 7,
+      "run_key": "r07-database_normalization_misconception-C4"
+    },
+    {
+      "condition": "C1",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 7,
+      "run_key": "r07-gradient_descent_scaffolding-C1"
+    },
+    {
+      "condition": "C0",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 7,
+      "run_key": "r07-llm_agents_study_plan-C0"
+    },
+    {
+      "condition": "C0",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 7,
+      "run_key": "r07-database_normalization_misconception-C0"
+    },
+    {
+      "condition": "C4",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 7,
+      "run_key": "r07-software_architecture_tradeoffs-C4"
+    },
+    {
+      "condition": "C3",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 7,
+      "run_key": "r07-gradient_descent_scaffolding-C3"
+    },
+    {
+      "condition": "C0",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 7,
+      "run_key": "r07-gradient_descent_scaffolding-C0"
+    },
+    {
+      "condition": "C4",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 7,
+      "run_key": "r07-cybersecurity_threat_model-C4"
+    },
+    {
+      "condition": "C4",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 7,
+      "run_key": "r07-llm_agents_study_plan-C4"
+    },
+    {
+      "condition": "C3",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 7,
+      "run_key": "r07-cybersecurity_threat_model-C3"
+    },
+    {
+      "condition": "C2",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 7,
+      "run_key": "r07-software_architecture_tradeoffs-C2"
+    },
+    {
+      "condition": "C3",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 7,
+      "run_key": "r07-software_architecture_tradeoffs-C3"
+    },
+    {
+      "condition": "C1",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 7,
+      "run_key": "r07-overfitting_adaptation-C1"
+    },
+    {
+      "condition": "C1",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 7,
+      "run_key": "r07-llm_agents_study_plan-C1"
+    },
+    {
+      "condition": "C3",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 7,
+      "run_key": "r07-overfitting_adaptation-C3"
+    },
+    {
+      "condition": "C2",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 7,
+      "run_key": "r07-cybersecurity_threat_model-C2"
+    },
+    {
+      "condition": "C1",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 7,
+      "run_key": "r07-software_architecture_tradeoffs-C1"
+    },
+    {
+      "condition": "C0",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 7,
+      "run_key": "r07-overfitting_adaptation-C0"
+    },
+    {
+      "condition": "C2",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 7,
+      "run_key": "r07-overfitting_adaptation-C2"
+    },
+    {
+      "condition": "C0",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 7,
+      "run_key": "r07-cybersecurity_threat_model-C0"
+    },
+    {
+      "condition": "C3",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 7,
+      "run_key": "r07-llm_agents_study_plan-C3"
+    },
+    {
+      "condition": "C2",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 7,
+      "run_key": "r07-llm_agents_study_plan-C2"
+    },
+    {
+      "condition": "C4",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 7,
+      "run_key": "r07-gradient_descent_scaffolding-C4"
+    },
+    {
+      "condition": "C1",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 7,
+      "run_key": "r07-database_normalization_misconception-C1"
+    },
+    {
+      "condition": "C2",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 7,
+      "run_key": "r07-database_normalization_misconception-C2"
+    },
+    {
+      "condition": "C4",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 7,
+      "run_key": "r07-overfitting_adaptation-C4"
+    },
+    {
+      "condition": "C2",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 7,
+      "run_key": "r07-gradient_descent_scaffolding-C2"
+    },
+    {
+      "condition": "C1",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 7,
+      "run_key": "r07-cybersecurity_threat_model-C1"
+    },
+    {
+      "condition": "C3",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 7,
+      "run_key": "r07-database_normalization_misconception-C3"
+    },
+    {
+      "condition": "C3",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 8,
+      "run_key": "r08-cybersecurity_threat_model-C3"
+    },
+    {
+      "condition": "C1",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 8,
+      "run_key": "r08-overfitting_adaptation-C1"
+    },
+    {
+      "condition": "C0",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 8,
+      "run_key": "r08-overfitting_adaptation-C0"
+    },
+    {
+      "condition": "C2",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 8,
+      "run_key": "r08-database_normalization_misconception-C2"
+    },
+    {
+      "condition": "C3",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 8,
+      "run_key": "r08-software_architecture_tradeoffs-C3"
+    },
+    {
+      "condition": "C3",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 8,
+      "run_key": "r08-llm_agents_study_plan-C3"
+    },
+    {
+      "condition": "C4",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 8,
+      "run_key": "r08-overfitting_adaptation-C4"
+    },
+    {
+      "condition": "C0",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 8,
+      "run_key": "r08-llm_agents_study_plan-C0"
+    },
+    {
+      "condition": "C0",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 8,
+      "run_key": "r08-cybersecurity_threat_model-C0"
+    },
+    {
+      "condition": "C1",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 8,
+      "run_key": "r08-cybersecurity_threat_model-C1"
+    },
+    {
+      "condition": "C1",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 8,
+      "run_key": "r08-database_normalization_misconception-C1"
+    },
+    {
+      "condition": "C3",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 8,
+      "run_key": "r08-gradient_descent_scaffolding-C3"
+    },
+    {
+      "condition": "C2",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 8,
+      "run_key": "r08-overfitting_adaptation-C2"
+    },
+    {
+      "condition": "C4",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 8,
+      "run_key": "r08-software_architecture_tradeoffs-C4"
+    },
+    {
+      "condition": "C2",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 8,
+      "run_key": "r08-software_architecture_tradeoffs-C2"
+    },
+    {
+      "condition": "C3",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 8,
+      "run_key": "r08-database_normalization_misconception-C3"
+    },
+    {
+      "condition": "C0",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 8,
+      "run_key": "r08-database_normalization_misconception-C0"
+    },
+    {
+      "condition": "C3",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 8,
+      "run_key": "r08-overfitting_adaptation-C3"
+    },
+    {
+      "condition": "C4",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 8,
+      "run_key": "r08-llm_agents_study_plan-C4"
+    },
+    {
+      "condition": "C4",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 8,
+      "run_key": "r08-cybersecurity_threat_model-C4"
+    },
+    {
+      "condition": "C4",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 8,
+      "run_key": "r08-database_normalization_misconception-C4"
+    },
+    {
+      "condition": "C4",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 8,
+      "run_key": "r08-gradient_descent_scaffolding-C4"
+    },
+    {
+      "condition": "C1",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 8,
+      "run_key": "r08-software_architecture_tradeoffs-C1"
+    },
+    {
+      "condition": "C1",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 8,
+      "run_key": "r08-gradient_descent_scaffolding-C1"
+    },
+    {
+      "condition": "C0",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 8,
+      "run_key": "r08-gradient_descent_scaffolding-C0"
+    },
+    {
+      "condition": "C0",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 8,
+      "run_key": "r08-software_architecture_tradeoffs-C0"
+    },
+    {
+      "condition": "C2",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 8,
+      "run_key": "r08-gradient_descent_scaffolding-C2"
+    },
+    {
+      "condition": "C1",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 8,
+      "run_key": "r08-llm_agents_study_plan-C1"
+    },
+    {
+      "condition": "C2",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 8,
+      "run_key": "r08-cybersecurity_threat_model-C2"
+    },
+    {
+      "condition": "C2",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 8,
+      "run_key": "r08-llm_agents_study_plan-C2"
+    },
+    {
+      "condition": "C1",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 9,
+      "run_key": "r09-software_architecture_tradeoffs-C1"
+    },
+    {
+      "condition": "C0",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 9,
+      "run_key": "r09-llm_agents_study_plan-C0"
+    },
+    {
+      "condition": "C2",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 9,
+      "run_key": "r09-software_architecture_tradeoffs-C2"
+    },
+    {
+      "condition": "C3",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 9,
+      "run_key": "r09-llm_agents_study_plan-C3"
+    },
+    {
+      "condition": "C1",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 9,
+      "run_key": "r09-database_normalization_misconception-C1"
+    },
+    {
+      "condition": "C2",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 9,
+      "run_key": "r09-llm_agents_study_plan-C2"
+    },
+    {
+      "condition": "C4",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 9,
+      "run_key": "r09-cybersecurity_threat_model-C4"
+    },
+    {
+      "condition": "C1",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 9,
+      "run_key": "r09-cybersecurity_threat_model-C1"
+    },
+    {
+      "condition": "C3",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 9,
+      "run_key": "r09-cybersecurity_threat_model-C3"
+    },
+    {
+      "condition": "C4",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 9,
+      "run_key": "r09-gradient_descent_scaffolding-C4"
+    },
+    {
+      "condition": "C0",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 9,
+      "run_key": "r09-gradient_descent_scaffolding-C0"
+    },
+    {
+      "condition": "C2",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 9,
+      "run_key": "r09-cybersecurity_threat_model-C2"
+    },
+    {
+      "condition": "C3",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 9,
+      "run_key": "r09-software_architecture_tradeoffs-C3"
+    },
+    {
+      "condition": "C4",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 9,
+      "run_key": "r09-software_architecture_tradeoffs-C4"
+    },
+    {
+      "condition": "C0",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 9,
+      "run_key": "r09-overfitting_adaptation-C0"
+    },
+    {
+      "condition": "C4",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 9,
+      "run_key": "r09-database_normalization_misconception-C4"
+    },
+    {
+      "condition": "C3",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 9,
+      "run_key": "r09-overfitting_adaptation-C3"
+    },
+    {
+      "condition": "C1",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 9,
+      "run_key": "r09-overfitting_adaptation-C1"
+    },
+    {
+      "condition": "C1",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 9,
+      "run_key": "r09-llm_agents_study_plan-C1"
+    },
+    {
+      "condition": "C3",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 9,
+      "run_key": "r09-database_normalization_misconception-C3"
+    },
+    {
+      "condition": "C3",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 9,
+      "run_key": "r09-gradient_descent_scaffolding-C3"
+    },
+    {
+      "condition": "C1",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 9,
+      "run_key": "r09-gradient_descent_scaffolding-C1"
+    },
+    {
+      "condition": "C4",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 9,
+      "run_key": "r09-llm_agents_study_plan-C4"
+    },
+    {
+      "condition": "C2",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 9,
+      "run_key": "r09-gradient_descent_scaffolding-C2"
+    },
+    {
+      "condition": "C0",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 9,
+      "run_key": "r09-database_normalization_misconception-C0"
+    },
+    {
+      "condition": "C0",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 9,
+      "run_key": "r09-software_architecture_tradeoffs-C0"
+    },
+    {
+      "condition": "C2",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 9,
+      "run_key": "r09-database_normalization_misconception-C2"
+    },
+    {
+      "condition": "C4",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 9,
+      "run_key": "r09-overfitting_adaptation-C4"
+    },
+    {
+      "condition": "C2",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 9,
+      "run_key": "r09-overfitting_adaptation-C2"
+    },
+    {
+      "condition": "C0",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 9,
+      "run_key": "r09-cybersecurity_threat_model-C0"
+    },
+    {
+      "condition": "C3",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 10,
+      "run_key": "r10-cybersecurity_threat_model-C3"
+    },
+    {
+      "condition": "C1",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 10,
+      "run_key": "r10-overfitting_adaptation-C1"
+    },
+    {
+      "condition": "C1",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 10,
+      "run_key": "r10-llm_agents_study_plan-C1"
+    },
+    {
+      "condition": "C0",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 10,
+      "run_key": "r10-database_normalization_misconception-C0"
+    },
+    {
+      "condition": "C2",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 10,
+      "run_key": "r10-software_architecture_tradeoffs-C2"
+    },
+    {
+      "condition": "C2",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 10,
+      "run_key": "r10-llm_agents_study_plan-C2"
+    },
+    {
+      "condition": "C0",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 10,
+      "run_key": "r10-gradient_descent_scaffolding-C0"
+    },
+    {
+      "condition": "C4",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 10,
+      "run_key": "r10-overfitting_adaptation-C4"
+    },
+    {
+      "condition": "C2",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 10,
+      "run_key": "r10-gradient_descent_scaffolding-C2"
+    },
+    {
+      "condition": "C1",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 10,
+      "run_key": "r10-software_architecture_tradeoffs-C1"
+    },
+    {
+      "condition": "C3",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 10,
+      "run_key": "r10-database_normalization_misconception-C3"
+    },
+    {
+      "condition": "C0",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 10,
+      "run_key": "r10-software_architecture_tradeoffs-C0"
+    },
+    {
+      "condition": "C3",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 10,
+      "run_key": "r10-llm_agents_study_plan-C3"
+    },
+    {
+      "condition": "C1",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 10,
+      "run_key": "r10-database_normalization_misconception-C1"
+    },
+    {
+      "condition": "C4",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 10,
+      "run_key": "r10-gradient_descent_scaffolding-C4"
+    },
+    {
+      "condition": "C0",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 10,
+      "run_key": "r10-overfitting_adaptation-C0"
+    },
+    {
+      "condition": "C2",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 10,
+      "run_key": "r10-cybersecurity_threat_model-C2"
+    },
+    {
+      "condition": "C1",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 10,
+      "run_key": "r10-gradient_descent_scaffolding-C1"
+    },
+    {
+      "condition": "C3",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 10,
+      "run_key": "r10-gradient_descent_scaffolding-C3"
+    },
+    {
+      "condition": "C1",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 10,
+      "run_key": "r10-cybersecurity_threat_model-C1"
+    },
+    {
+      "condition": "C4",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 10,
+      "run_key": "r10-cybersecurity_threat_model-C4"
+    },
+    {
+      "condition": "C2",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 10,
+      "run_key": "r10-database_normalization_misconception-C2"
+    },
+    {
+      "condition": "C0",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 10,
+      "run_key": "r10-llm_agents_study_plan-C0"
+    },
+    {
+      "condition": "C4",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 10,
+      "run_key": "r10-software_architecture_tradeoffs-C4"
+    },
+    {
+      "condition": "C4",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 10,
+      "run_key": "r10-database_normalization_misconception-C4"
+    },
+    {
+      "condition": "C4",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 10,
+      "run_key": "r10-llm_agents_study_plan-C4"
+    },
+    {
+      "condition": "C0",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 10,
+      "run_key": "r10-cybersecurity_threat_model-C0"
+    },
+    {
+      "condition": "C3",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 10,
+      "run_key": "r10-overfitting_adaptation-C3"
+    },
+    {
+      "condition": "C2",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 10,
+      "run_key": "r10-overfitting_adaptation-C2"
+    },
+    {
+      "condition": "C3",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 10,
+      "run_key": "r10-software_architecture_tradeoffs-C3"
+    },
+    {
+      "condition": "C2",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 11,
+      "run_key": "r11-llm_agents_study_plan-C2"
+    },
+    {
+      "condition": "C4",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 11,
+      "run_key": "r11-cybersecurity_threat_model-C4"
+    },
+    {
+      "condition": "C4",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 11,
+      "run_key": "r11-llm_agents_study_plan-C4"
+    },
+    {
+      "condition": "C3",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 11,
+      "run_key": "r11-software_architecture_tradeoffs-C3"
+    },
+    {
+      "condition": "C1",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 11,
+      "run_key": "r11-gradient_descent_scaffolding-C1"
+    },
+    {
+      "condition": "C2",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 11,
+      "run_key": "r11-gradient_descent_scaffolding-C2"
+    },
+    {
+      "condition": "C0",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 11,
+      "run_key": "r11-software_architecture_tradeoffs-C0"
+    },
+    {
+      "condition": "C1",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 11,
+      "run_key": "r11-cybersecurity_threat_model-C1"
+    },
+    {
+      "condition": "C0",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 11,
+      "run_key": "r11-overfitting_adaptation-C0"
+    },
+    {
+      "condition": "C1",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 11,
+      "run_key": "r11-software_architecture_tradeoffs-C1"
+    },
+    {
+      "condition": "C1",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 11,
+      "run_key": "r11-llm_agents_study_plan-C1"
+    },
+    {
+      "condition": "C2",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 11,
+      "run_key": "r11-cybersecurity_threat_model-C2"
+    },
+    {
+      "condition": "C0",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 11,
+      "run_key": "r11-database_normalization_misconception-C0"
+    },
+    {
+      "condition": "C2",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 11,
+      "run_key": "r11-software_architecture_tradeoffs-C2"
+    },
+    {
+      "condition": "C3",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 11,
+      "run_key": "r11-cybersecurity_threat_model-C3"
+    },
+    {
+      "condition": "C1",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 11,
+      "run_key": "r11-overfitting_adaptation-C1"
+    },
+    {
+      "condition": "C2",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 11,
+      "run_key": "r11-database_normalization_misconception-C2"
+    },
+    {
+      "condition": "C4",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 11,
+      "run_key": "r11-overfitting_adaptation-C4"
+    },
+    {
+      "condition": "C2",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 11,
+      "run_key": "r11-overfitting_adaptation-C2"
+    },
+    {
+      "condition": "C3",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 11,
+      "run_key": "r11-llm_agents_study_plan-C3"
+    },
+    {
+      "condition": "C4",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 11,
+      "run_key": "r11-database_normalization_misconception-C4"
+    },
+    {
+      "condition": "C4",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 11,
+      "run_key": "r11-software_architecture_tradeoffs-C4"
+    },
+    {
+      "condition": "C3",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 11,
+      "run_key": "r11-overfitting_adaptation-C3"
+    },
+    {
+      "condition": "C4",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 11,
+      "run_key": "r11-gradient_descent_scaffolding-C4"
+    },
+    {
+      "condition": "C0",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 11,
+      "run_key": "r11-cybersecurity_threat_model-C0"
+    },
+    {
+      "condition": "C3",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 11,
+      "run_key": "r11-database_normalization_misconception-C3"
+    },
+    {
+      "condition": "C1",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 11,
+      "run_key": "r11-database_normalization_misconception-C1"
+    },
+    {
+      "condition": "C0",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 11,
+      "run_key": "r11-llm_agents_study_plan-C0"
+    },
+    {
+      "condition": "C0",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 11,
+      "run_key": "r11-gradient_descent_scaffolding-C0"
+    },
+    {
+      "condition": "C3",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 11,
+      "run_key": "r11-gradient_descent_scaffolding-C3"
+    },
+    {
+      "condition": "C4",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 12,
+      "run_key": "r12-llm_agents_study_plan-C4"
+    },
+    {
+      "condition": "C0",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 12,
+      "run_key": "r12-llm_agents_study_plan-C0"
+    },
+    {
+      "condition": "C0",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 12,
+      "run_key": "r12-cybersecurity_threat_model-C0"
+    },
+    {
+      "condition": "C1",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 12,
+      "run_key": "r12-overfitting_adaptation-C1"
+    },
+    {
+      "condition": "C4",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 12,
+      "run_key": "r12-database_normalization_misconception-C4"
+    },
+    {
+      "condition": "C2",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 12,
+      "run_key": "r12-cybersecurity_threat_model-C2"
+    },
+    {
+      "condition": "C3",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 12,
+      "run_key": "r12-overfitting_adaptation-C3"
+    },
+    {
+      "condition": "C2",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 12,
+      "run_key": "r12-software_architecture_tradeoffs-C2"
+    },
+    {
+      "condition": "C3",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 12,
+      "run_key": "r12-llm_agents_study_plan-C3"
+    },
+    {
+      "condition": "C1",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 12,
+      "run_key": "r12-cybersecurity_threat_model-C1"
+    },
+    {
+      "condition": "C1",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 12,
+      "run_key": "r12-gradient_descent_scaffolding-C1"
+    },
+    {
+      "condition": "C3",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 12,
+      "run_key": "r12-gradient_descent_scaffolding-C3"
+    },
+    {
+      "condition": "C4",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 12,
+      "run_key": "r12-software_architecture_tradeoffs-C4"
+    },
+    {
+      "condition": "C2",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 12,
+      "run_key": "r12-database_normalization_misconception-C2"
+    },
+    {
+      "condition": "C4",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 12,
+      "run_key": "r12-gradient_descent_scaffolding-C4"
+    },
+    {
+      "condition": "C2",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 12,
+      "run_key": "r12-llm_agents_study_plan-C2"
+    },
+    {
+      "condition": "C0",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 12,
+      "run_key": "r12-overfitting_adaptation-C0"
+    },
+    {
+      "condition": "C0",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 12,
+      "run_key": "r12-database_normalization_misconception-C0"
+    },
+    {
+      "condition": "C0",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 12,
+      "run_key": "r12-gradient_descent_scaffolding-C0"
+    },
+    {
+      "condition": "C1",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 12,
+      "run_key": "r12-llm_agents_study_plan-C1"
+    },
+    {
+      "condition": "C2",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 12,
+      "run_key": "r12-gradient_descent_scaffolding-C2"
+    },
+    {
+      "condition": "C3",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 12,
+      "run_key": "r12-cybersecurity_threat_model-C3"
+    },
+    {
+      "condition": "C4",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 12,
+      "run_key": "r12-cybersecurity_threat_model-C4"
+    },
+    {
+      "condition": "C2",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 12,
+      "run_key": "r12-overfitting_adaptation-C2"
+    },
+    {
+      "condition": "C1",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 12,
+      "run_key": "r12-software_architecture_tradeoffs-C1"
+    },
+    {
+      "condition": "C4",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 12,
+      "run_key": "r12-overfitting_adaptation-C4"
+    },
+    {
+      "condition": "C1",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 12,
+      "run_key": "r12-database_normalization_misconception-C1"
+    },
+    {
+      "condition": "C3",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 12,
+      "run_key": "r12-database_normalization_misconception-C3"
+    },
+    {
+      "condition": "C3",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 12,
+      "run_key": "r12-software_architecture_tradeoffs-C3"
+    },
+    {
+      "condition": "C0",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 12,
+      "run_key": "r12-software_architecture_tradeoffs-C0"
+    },
+    {
+      "condition": "C1",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 13,
+      "run_key": "r13-overfitting_adaptation-C1"
+    },
+    {
+      "condition": "C0",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 13,
+      "run_key": "r13-software_architecture_tradeoffs-C0"
+    },
+    {
+      "condition": "C0",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 13,
+      "run_key": "r13-overfitting_adaptation-C0"
+    },
+    {
+      "condition": "C1",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 13,
+      "run_key": "r13-gradient_descent_scaffolding-C1"
+    },
+    {
+      "condition": "C3",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 13,
+      "run_key": "r13-software_architecture_tradeoffs-C3"
+    },
+    {
+      "condition": "C0",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 13,
+      "run_key": "r13-llm_agents_study_plan-C0"
+    },
+    {
+      "condition": "C4",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 13,
+      "run_key": "r13-llm_agents_study_plan-C4"
+    },
+    {
+      "condition": "C2",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 13,
+      "run_key": "r13-gradient_descent_scaffolding-C2"
+    },
+    {
+      "condition": "C2",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 13,
+      "run_key": "r13-database_normalization_misconception-C2"
+    },
+    {
+      "condition": "C4",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 13,
+      "run_key": "r13-software_architecture_tradeoffs-C4"
+    },
+    {
+      "condition": "C0",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 13,
+      "run_key": "r13-gradient_descent_scaffolding-C0"
+    },
+    {
+      "condition": "C4",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 13,
+      "run_key": "r13-database_normalization_misconception-C4"
+    },
+    {
+      "condition": "C4",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 13,
+      "run_key": "r13-overfitting_adaptation-C4"
+    },
+    {
+      "condition": "C2",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 13,
+      "run_key": "r13-cybersecurity_threat_model-C2"
+    },
+    {
+      "condition": "C2",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 13,
+      "run_key": "r13-overfitting_adaptation-C2"
+    },
+    {
+      "condition": "C3",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 13,
+      "run_key": "r13-gradient_descent_scaffolding-C3"
+    },
+    {
+      "condition": "C3",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 13,
+      "run_key": "r13-llm_agents_study_plan-C3"
+    },
+    {
+      "condition": "C4",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 13,
+      "run_key": "r13-gradient_descent_scaffolding-C4"
+    },
+    {
+      "condition": "C1",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 13,
+      "run_key": "r13-llm_agents_study_plan-C1"
+    },
+    {
+      "condition": "C1",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 13,
+      "run_key": "r13-database_normalization_misconception-C1"
+    },
+    {
+      "condition": "C3",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 13,
+      "run_key": "r13-cybersecurity_threat_model-C3"
+    },
+    {
+      "condition": "C1",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 13,
+      "run_key": "r13-software_architecture_tradeoffs-C1"
+    },
+    {
+      "condition": "C0",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 13,
+      "run_key": "r13-cybersecurity_threat_model-C0"
+    },
+    {
+      "condition": "C0",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 13,
+      "run_key": "r13-database_normalization_misconception-C0"
+    },
+    {
+      "condition": "C1",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 13,
+      "run_key": "r13-cybersecurity_threat_model-C1"
+    },
+    {
+      "condition": "C4",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 13,
+      "run_key": "r13-cybersecurity_threat_model-C4"
+    },
+    {
+      "condition": "C2",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 13,
+      "run_key": "r13-llm_agents_study_plan-C2"
+    },
+    {
+      "condition": "C3",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 13,
+      "run_key": "r13-overfitting_adaptation-C3"
+    },
+    {
+      "condition": "C2",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 13,
+      "run_key": "r13-software_architecture_tradeoffs-C2"
+    },
+    {
+      "condition": "C3",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 13,
+      "run_key": "r13-database_normalization_misconception-C3"
+    },
+    {
+      "condition": "C4",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 14,
+      "run_key": "r14-llm_agents_study_plan-C4"
+    },
+    {
+      "condition": "C0",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 14,
+      "run_key": "r14-software_architecture_tradeoffs-C0"
+    },
+    {
+      "condition": "C4",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 14,
+      "run_key": "r14-software_architecture_tradeoffs-C4"
+    },
+    {
+      "condition": "C3",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 14,
+      "run_key": "r14-database_normalization_misconception-C3"
+    },
+    {
+      "condition": "C4",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 14,
+      "run_key": "r14-gradient_descent_scaffolding-C4"
+    },
+    {
+      "condition": "C1",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 14,
+      "run_key": "r14-database_normalization_misconception-C1"
+    },
+    {
+      "condition": "C1",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 14,
+      "run_key": "r14-llm_agents_study_plan-C1"
+    },
+    {
+      "condition": "C2",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 14,
+      "run_key": "r14-llm_agents_study_plan-C2"
+    },
+    {
+      "condition": "C4",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 14,
+      "run_key": "r14-database_normalization_misconception-C4"
+    },
+    {
+      "condition": "C2",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 14,
+      "run_key": "r14-overfitting_adaptation-C2"
+    },
+    {
+      "condition": "C2",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 14,
+      "run_key": "r14-database_normalization_misconception-C2"
+    },
+    {
+      "condition": "C0",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 14,
+      "run_key": "r14-llm_agents_study_plan-C0"
+    },
+    {
+      "condition": "C1",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 14,
+      "run_key": "r14-cybersecurity_threat_model-C1"
+    },
+    {
+      "condition": "C2",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 14,
+      "run_key": "r14-cybersecurity_threat_model-C2"
+    },
+    {
+      "condition": "C0",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 14,
+      "run_key": "r14-cybersecurity_threat_model-C0"
+    },
+    {
+      "condition": "C2",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 14,
+      "run_key": "r14-software_architecture_tradeoffs-C2"
+    },
+    {
+      "condition": "C0",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 14,
+      "run_key": "r14-overfitting_adaptation-C0"
+    },
+    {
+      "condition": "C0",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 14,
+      "run_key": "r14-gradient_descent_scaffolding-C0"
+    },
+    {
+      "condition": "C0",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 14,
+      "run_key": "r14-database_normalization_misconception-C0"
+    },
+    {
+      "condition": "C3",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 14,
+      "run_key": "r14-llm_agents_study_plan-C3"
+    },
+    {
+      "condition": "C2",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 14,
+      "run_key": "r14-gradient_descent_scaffolding-C2"
+    },
+    {
+      "condition": "C3",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 14,
+      "run_key": "r14-overfitting_adaptation-C3"
+    },
+    {
+      "condition": "C3",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 14,
+      "run_key": "r14-cybersecurity_threat_model-C3"
+    },
+    {
+      "condition": "C1",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 14,
+      "run_key": "r14-gradient_descent_scaffolding-C1"
+    },
+    {
+      "condition": "C1",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 14,
+      "run_key": "r14-overfitting_adaptation-C1"
+    },
+    {
+      "condition": "C4",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 14,
+      "run_key": "r14-cybersecurity_threat_model-C4"
+    },
+    {
+      "condition": "C4",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 14,
+      "run_key": "r14-overfitting_adaptation-C4"
+    },
+    {
+      "condition": "C3",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 14,
+      "run_key": "r14-gradient_descent_scaffolding-C3"
+    },
+    {
+      "condition": "C3",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 14,
+      "run_key": "r14-software_architecture_tradeoffs-C3"
+    },
+    {
+      "condition": "C1",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 14,
+      "run_key": "r14-software_architecture_tradeoffs-C1"
+    },
+    {
+      "condition": "C1",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 15,
+      "run_key": "r15-software_architecture_tradeoffs-C1"
+    },
+    {
+      "condition": "C2",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 15,
+      "run_key": "r15-llm_agents_study_plan-C2"
+    },
+    {
+      "condition": "C1",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 15,
+      "run_key": "r15-database_normalization_misconception-C1"
+    },
+    {
+      "condition": "C2",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 15,
+      "run_key": "r15-software_architecture_tradeoffs-C2"
+    },
+    {
+      "condition": "C1",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 15,
+      "run_key": "r15-overfitting_adaptation-C1"
+    },
+    {
+      "condition": "C3",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 15,
+      "run_key": "r15-software_architecture_tradeoffs-C3"
+    },
+    {
+      "condition": "C4",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 15,
+      "run_key": "r15-gradient_descent_scaffolding-C4"
+    },
+    {
+      "condition": "C4",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 15,
+      "run_key": "r15-software_architecture_tradeoffs-C4"
+    },
+    {
+      "condition": "C0",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 15,
+      "run_key": "r15-llm_agents_study_plan-C0"
+    },
+    {
+      "condition": "C2",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 15,
+      "run_key": "r15-database_normalization_misconception-C2"
+    },
+    {
+      "condition": "C2",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 15,
+      "run_key": "r15-cybersecurity_threat_model-C2"
+    },
+    {
+      "condition": "C4",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 15,
+      "run_key": "r15-llm_agents_study_plan-C4"
+    },
+    {
+      "condition": "C4",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 15,
+      "run_key": "r15-database_normalization_misconception-C4"
+    },
+    {
+      "condition": "C0",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 15,
+      "run_key": "r15-cybersecurity_threat_model-C0"
+    },
+    {
+      "condition": "C1",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 15,
+      "run_key": "r15-gradient_descent_scaffolding-C1"
+    },
+    {
+      "condition": "C0",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 15,
+      "run_key": "r15-database_normalization_misconception-C0"
+    },
+    {
+      "condition": "C1",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 15,
+      "run_key": "r15-cybersecurity_threat_model-C1"
+    },
+    {
+      "condition": "C0",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 15,
+      "run_key": "r15-overfitting_adaptation-C0"
+    },
+    {
+      "condition": "C4",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 15,
+      "run_key": "r15-cybersecurity_threat_model-C4"
+    },
+    {
+      "condition": "C0",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 15,
+      "run_key": "r15-gradient_descent_scaffolding-C0"
+    },
+    {
+      "condition": "C3",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 15,
+      "run_key": "r15-gradient_descent_scaffolding-C3"
+    },
+    {
+      "condition": "C2",
+      "task_index": 1,
+      "task_id": "gradient_descent_scaffolding",
+      "repetition": 15,
+      "run_key": "r15-gradient_descent_scaffolding-C2"
+    },
+    {
+      "condition": "C3",
+      "task_index": 3,
+      "task_id": "database_normalization_misconception",
+      "repetition": 15,
+      "run_key": "r15-database_normalization_misconception-C3"
+    },
+    {
+      "condition": "C3",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 15,
+      "run_key": "r15-llm_agents_study_plan-C3"
+    },
+    {
+      "condition": "C0",
+      "task_index": 4,
+      "task_id": "software_architecture_tradeoffs",
+      "repetition": 15,
+      "run_key": "r15-software_architecture_tradeoffs-C0"
+    },
+    {
+      "condition": "C2",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 15,
+      "run_key": "r15-overfitting_adaptation-C2"
+    },
+    {
+      "condition": "C1",
+      "task_index": 2,
+      "task_id": "llm_agents_study_plan",
+      "repetition": 15,
+      "run_key": "r15-llm_agents_study_plan-C1"
+    },
+    {
+      "condition": "C3",
+      "task_index": 5,
+      "task_id": "cybersecurity_threat_model",
+      "repetition": 15,
+      "run_key": "r15-cybersecurity_threat_model-C3"
+    },
+    {
+      "condition": "C3",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 15,
+      "run_key": "r15-overfitting_adaptation-C3"
+    },
+    {
+      "condition": "C4",
+      "task_index": 0,
+      "task_id": "overfitting_adaptation",
+      "repetition": 15,
+      "run_key": "r15-overfitting_adaptation-C4"
+    }
+  ],
+  "server_health": {
+    "status": "ok"
+  },
+  "server_models": {
+    "models": [
+      {
+        "name": "gpt-oss-20b",
+        "model": "gpt-oss-20b",
+        "modified_at": "",
+        "size": "",
+        "digest": "",
+        "type": "model",
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "capabilities": [
+          "completion"
+        ],
+        "parameters": "",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "",
+          "families": [
+            ""
+          ],
+          "parameter_size": "",
+          "quantization_level": ""
+        }
+      }
+    ],
+    "object": "list",
+    "data": [
+      {
+        "id": "gpt-oss-20b",
+        "object": "model",
+        "created": 1783797830,
+        "owned_by": "llamacpp",
+        "meta": {
+          "vocab_type": 2,
+          "n_vocab": 201088,
+          "n_ctx_train": 131072,
+          "n_embd": 2880,
+          "n_params": 20914757184,
+          "size": 12096558336
+        }
+      }
+    ]
+  },
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 4080 SUPER",
+    "uuid": "GPU-0e2a78c7-6da3-2d8e-72b5-d85c5e18e483",
+    "driver_version": "580.159.03"
+  },
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "platform": "Linux-6.14.0-1020-oem-x86_64-with-glibc2.39",
+  "package_versions": {
+    "requests": "2.32.3",
+    "PyYAML": "6.0.2",
+    "nvidia-ml-py": "13.610.43"
+  },
+  "git": {
+    "commit": "",
+    "branch": "",
+    "status_porcelain": ""
+  }
+}

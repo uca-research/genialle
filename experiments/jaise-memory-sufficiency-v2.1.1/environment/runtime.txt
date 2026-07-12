@@ -1,0 +1,13 @@
+Generated: 2026-07-12T04:28:32+02:00
+
+Operating system:
+Linux Genialle25 6.14.0-1020-oem #20-Ubuntu SMP PREEMPT_DYNAMIC Mon Jan 19 08:17:52 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+
+Python:
+Python 3.12.3
+
+Project directory:
+/home/albertomatilla/mi_entorno/sma_edu_multi
+
+Final experimental run:
+/home/albertomatilla/mi_entorno/sma_edu_multi/logs_v2/full_20260711_212350

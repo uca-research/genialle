@@ -1,0 +1,69 @@
+{
+  "run_dir": "logs_v2/full_20260711_212350",
+  "mode": "full",
+  "expected_episodes": 450,
+  "completed_episodes": 450,
+  "steps": 4050,
+  "failures": 0,
+  "conditions": {
+    "C3": 90,
+    "C0": 90,
+    "C2": 90,
+    "C4": 90,
+    "C1": 90
+  },
+  "total_retries": 0,
+  "checks": [
+    {
+      "check": "All scheduled episodes completed",
+      "passed": true,
+      "detail": "completed=450, expected=450, failures=0"
+    },
+    {
+      "check": "Non-empty final content >= 99%",
+      "passed": true,
+      "detail": "empty=0/4050 (0.00%)"
+    },
+    {
+      "check": "No raw reasoning markers stored",
+      "passed": true,
+      "detail": "marker_outputs=0"
+    },
+    {
+      "check": "Evaluator JSON validity >= 99%",
+      "passed": true,
+      "detail": "valid=1350/1350 (100.00%)"
+    },
+    {
+      "check": "Adapter truncation < 2%",
+      "passed": true,
+      "detail": "truncated=2/1350 (0.15%)"
+    },
+    {
+      "check": "Evaluator truncation < 2%",
+      "passed": true,
+      "detail": "truncated=0/1350 (0.00%)"
+    },
+    {
+      "check": "Teacher truncation < 2%",
+      "passed": true,
+      "detail": "truncated=3/1350 (0.22%)"
+    },
+    {
+      "check": "Valid power traces",
+      "passed": true,
+      "detail": "insufficient_samples=0, nonpositive_baseline=0"
+    },
+    {
+      "check": "No current-round memory contamination",
+      "passed": true,
+      "detail": "contaminated_reads=0"
+    },
+    {
+      "check": "Episode memory deletion succeeded",
+      "passed": true,
+      "detail": "deletion_failures=0"
+    }
+  ],
+  "overall_pass": true
+}

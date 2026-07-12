@@ -1,0 +1,143 @@
+tasks:
+  - id: "overfitting_adaptation"
+    domain: "machine_learning"
+    level: "undergraduate_3rd_year"
+    learning_goal: >
+      Understand overfitting, recognise it from training and validation
+      behaviour, and select mitigation strategies.
+    learner_profile:
+      prior_knowledge: "Knows train/test splits and basic supervised learning."
+      preferences: "Prefers a concrete example before mathematical notation."
+      communication: "Concise sections, low symbol density, explicit recap."
+    rounds:
+      - learner_event: >
+          Explain overfitting with one intuitive example, one compact
+          mathematical formulation, and two mitigation strategies.
+        adaptation_target: "Establish an accessible baseline explanation."
+      - learner_event: >
+          I still think that a lower training loss always means a better model.
+          Correct this misconception using a small numeric example.
+        adaptation_target: "Correct the misconception and preserve continuity."
+      - learner_event: >
+          Apply the idea to neural networks and give me a short diagnostic
+          checklist for model development.
+        adaptation_target: "Transfer the concept to practice."
+
+  - id: "gradient_descent_scaffolding"
+    domain: "optimization"
+    level: "undergraduate_2nd_year"
+    learning_goal: >
+      Apply gradient descent to a quadratic objective and explain how the
+      learning rate affects convergence.
+    learner_profile:
+      prior_knowledge: "Can differentiate simple polynomials."
+      preferences: "Needs every arithmetic step made explicit."
+      communication: "Use a compact worked example and avoid skipped steps."
+    rounds:
+      - learner_event: >
+          Guide me through one update for f(x)=(x-3)^2, starting at x=0 with
+          learning rate 0.1.
+        adaptation_target: "Provide transparent procedural scaffolding."
+      - learner_event: >
+          I multiplied by the learning rate before computing the derivative.
+          Show exactly where my reasoning went wrong.
+        adaptation_target: "Diagnose the procedural error."
+      - learner_event: >
+          Compare learning rates 0.1 and 1.2 and explain the expected behaviour
+          without running code.
+        adaptation_target: "Support transfer and prediction."
+
+  - id: "llm_agents_study_plan"
+    domain: "ai_education"
+    level: "graduate"
+    learning_goal: >
+      Build a feasible learning pathway for LLM-based educational agents,
+      including architecture, memory, evaluation, and responsible deployment.
+    learner_profile:
+      prior_knowledge: "Comfortable with Python and introductory ML."
+      preferences: "Can study four hours per week and values practical outputs."
+      communication: "Prioritised plan with explicit dependencies."
+    rounds:
+      - learner_event: >
+          Design a four-week study plan with topics, readings, and one practical
+          activity per week.
+        adaptation_target: "Create a feasible personalised plan."
+      - learner_event: >
+          I only have two hours per week now. Preserve the essential objectives
+          and revise the plan.
+        adaptation_target: "Adapt to a changed resource constraint."
+      - learner_event: >
+          Add a final mini-project demonstrating memory, orchestration,
+          evaluation, and responsible data handling.
+        adaptation_target: "Integrate the learning trajectory."
+
+  - id: "database_normalization_misconception"
+    domain: "databases"
+    level: "undergraduate_2nd_year"
+    learning_goal: >
+      Distinguish functional, partial, and transitive dependency during
+      relational normalisation.
+    learner_profile:
+      prior_knowledge: "Understands primary keys but confuses 2NF and 3NF."
+      preferences: "Learns best from one stable schema across rounds."
+      communication: "Use plain-text tables and dependency arrows."
+    rounds:
+      - learner_event: >
+          Using a student-course-enrolment schema, explain the move from 1NF to
+          2NF.
+        adaptation_target: "Introduce partial dependency using a stable example."
+      - learner_event: >
+          I think every dependency on a non-key attribute violates 2NF. Correct
+          me while keeping the same schema.
+        adaptation_target: "Correct the misconception with continuity."
+      - learner_event: >
+          Continue with the same schema and show the additional change needed
+          to reach 3NF.
+        adaptation_target: "Support longitudinal conceptual progression."
+
+  - id: "software_architecture_tradeoffs"
+    domain: "software_engineering"
+    level: "undergraduate_3rd_year"
+    learning_goal: >
+      Select an architectural pattern through quality attributes and trade-offs.
+    learner_profile:
+      prior_knowledge: "Knows layered and event-driven architecture by name."
+      preferences: "Wants decision criteria rather than long definitions."
+      communication: "Use a compact comparison and justified recommendation."
+    rounds:
+      - learner_event: >
+          Compare layered and event-driven architectures for a university
+          notification platform.
+        adaptation_target: "Frame the decision through quality attributes."
+      - learner_event: >
+          The platform must tolerate temporary outages and bursts of
+          notifications. Revise your recommendation.
+        adaptation_target: "Adapt to contextual changes."
+      - learner_event: >
+          Explain one new risk introduced by the revised choice and one
+          mitigation for a design review.
+        adaptation_target: "Support accountable decision-making."
+
+  - id: "cybersecurity_threat_model"
+    domain: "cybersecurity"
+    level: "graduate"
+    learning_goal: >
+      Link assets, threats, controls, and residual risk for an educational
+      intelligent environment.
+    learner_profile:
+      prior_knowledge: "Understands authentication and access control."
+      preferences: "Needs prioritisation and explicit assumptions."
+      communication: "Use a small risk table and avoid alarmist language."
+    rounds:
+      - learner_event: >
+          Create a threat model for an on-premise AI tutoring service that
+          stores short-term learner interaction history.
+        adaptation_target: "Identify assets, threats, controls, and assumptions."
+      - learner_event: >
+          Teachers can upload documents and students share the same GPU service.
+          Update the highest-priority risks.
+        adaptation_target: "Adapt the model to new context."
+      - learner_event: >
+          Propose a data-minimisation and deletion policy and explain residual
+          risk for a governance committee.
+        adaptation_target: "Connect technical design and governance."
