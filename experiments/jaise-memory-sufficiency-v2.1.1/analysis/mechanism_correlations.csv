@@ -1,0 +1,5 @@
+method,x,y,n,coefficient,p_value
+Pearson,C4-C0 completion tokens,C4-C0 dynamic energy J,90,0.9831064713372748,1.0929973406143935e-66
+Pearson,C4-C0 completion tokens,C4-C0 wall time s,90,0.9875452856515072,1.796473932950187e-72
+Spearman,C4-C0 completion tokens,C4-C0 dynamic energy J,90,0.9815200482055839,5.484688455659037e-65
+Spearman,C4-C0 completion tokens,C4-C0 wall time s,90,0.9882288058104377,1.5209497568467792e-73
