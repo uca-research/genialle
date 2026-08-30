@@ -1,4 +1,3 @@
-````markdown
 # Post-hoc analyses over the published final-run logs
 
 This folder contains the post-hoc analyses reported in the journal article
