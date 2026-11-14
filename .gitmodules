@@ -4,3 +4,6 @@
 [submodule "LLMPrompter"]
 	path = LLMPrompter
 	url = https://github.com/lNoelia/KnowledgeModelling_LLMPrompter
+[submodule "COMPARSA"]
+	path = COMPARSA
+	url = https://github.com/albertomatilla25/comparsa.git
